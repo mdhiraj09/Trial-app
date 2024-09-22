@@ -1,0 +1,58 @@
+<%-include("include/head.ejs") %>
+<main>
+<form action="" class="container" method="post">
+    <div class="form-floating mb-3 my-2">
+        <input
+            type="text"
+            class="form-control"
+            name="username"
+            id="formId1"
+            placeholder=""
+        />
+        <label for="formId1">User Name</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input
+            type="text"
+            class="form-control"
+            name="title"
+            id="formId1"
+            placeholder=""
+        />
+        <label for="formId1">Title of Post</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input
+            type="text"
+            class="form-control"
+            name="description"
+            id="formId1"
+            placeholder=""
+        />
+        <label for="formId1">Description</label>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Choose file</label>
+        <input
+            type="file"
+            class="form-control"
+            name=""
+            id=""
+            placeholder=""
+            aria-describedby="fileHelpId"
+        />
+        <div id="fileHelpId" class="form-text">JPG/JPEG Only*</div>
+    </div>
+    <button
+        type="submit"
+        class="btn btn-primary"
+    >
+        Submit
+    </button>
+    
+</form>
+
+</main>
+
+
+<%-include("include/foot.ejs") %>

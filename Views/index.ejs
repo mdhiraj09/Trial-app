@@ -1,0 +1,15 @@
+<%-include("include/head.ejs") %>
+<main>
+  <% for(post of posts){ %>
+    <div class="card container my-4" style="width: 50vw;">
+        <img src="<%=post.filepath%>" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><%= post.title %></post></h5>
+          <p class="card-text"><%=post.description %></p>
+          <a href="http://localhost:8000/post/posts" class="btn btn-warning">View In Detail</a>
+          <a href="http://localhost:8000/post/update" class="btn btn-danger mx-3">Edit</a>
+        </div>
+      </div>
+      <% } %>
+</main>
+<%-include("include/foot.ejs") %>
